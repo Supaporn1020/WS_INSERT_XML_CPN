@@ -1415,7 +1415,7 @@ Public Class WS_INSERT_XML_DRUG
             'Path_XML = paths & "\" & dr2("Newcode") & ".xml" 'สร้างชื่อ XML
 
             If groupname = "DR" Then
-                BUILD_XML_DI(dr2("Newcode"))
+                'BUILD_XML_DI(dr2("Newcode"))
                 Dim dao_dr As New DAO_XML_CPN.TB_XML_CPN_KEEP_PATH
                 'Dim dao_insert As New DAO_CONFIG.TB_XML_CONFIG
                 dao_dr.GetDataby_GROUPNAME_TYPE(groupname, "1")

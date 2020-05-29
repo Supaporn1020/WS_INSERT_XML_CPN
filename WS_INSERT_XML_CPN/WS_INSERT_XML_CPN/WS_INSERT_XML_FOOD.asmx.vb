@@ -324,11 +324,11 @@ Public Class WS_INSERT_XML_FOOD
 #End Region
 #Region "ใส่เลขสารระบบ"
     <WebMethod(Description:="อาหารทุกประเภท(ส่งเลขสารระบบ)")>
-    Public Function XML_FOOD_FDPDTNO(ByVal fdpdtno As String, ByVal IDENTIFY_EDIT As String)
-        Dim ck_ As String = check_xml_food_fdpdtno(fdpdtno, IDENTIFY_EDIT)
+    Public Function XML_FOOD_FDPDTNO(ByVal fdpdtno As String, ByVal IDENTIFY_EDIT As String, ByVal Newcode As String)
+        Dim ck_ As String = check_xml_food_fdpdtno(fdpdtno, IDENTIFY_EDIT, Newcode)
         Return ck_
     End Function
-    Private Function check_xml_food_fdpdtno(ByVal fdpdtno As String, ByVal IDENTIFY_EDIT As String) As String
+    Private Function check_xml_food_fdpdtno(ByVal fdpdtno As String, ByVal IDENTIFY_EDIT As String, ByVal Newcode As String) As String
         Dim des As String
         Dim ck As String = ""
         Dim Status As String = ""
@@ -347,33 +347,35 @@ Public Class WS_INSERT_XML_FOOD
 
                 If ck_fda_xml.fields.IDA <> 0 Then   'เช็คแล้วว่ามี xml ในตารางXML_FOOD
                     'สร้าง xml  แล้ว insert  สถานะ เป็น S 
-                    ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT)
+                    ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT, Newcode)
                     update_status_food_fdpdtno(fdpdtno)   '
                 End If
                 des = "START FC:XML_FOOD_FDPDTNO :check Newcod TB XML_CPN_KEEP_FOOD success"
             Else
-                'เช็คสถานะ ว่าเป็น W หรือ S 
-                Status = dao_fda_cpn.fields.Status
-                If Status = "W" Then
-                    'สร้าง xml  แล้วอัพเดทสถานะเป็น S แล้วก็วันที่ 
-                    ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT)
-                    'update_status_food_fdpdtno(fdpdtno)
-                ElseIf Status = "S" Then
-                    'ไม่ต้องทำอะไร
-                    ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT)
-                    'update_status_food_fdpdtno(fdpdtno)
-                    'BUILD_XML(Newcode_txt)
-                    'update_status(Newcode_txt)
-                    'ElseIf Status = "F" Then
-                    '    BUILD_XML(Newcode_txt)
-                    '    update_status_F(Newcode_txt)
-                End If
+                ''เช็คสถานะ ว่าเป็น W หรือ S 
+                'Status = dao_fda_cpn.fields.Status
+                'If Status = "W" Then
+                '    'สร้าง xml  แล้วอัพเดทสถานะเป็น S แล้วก็วันที่ 
+                '    ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT)
+                '    'update_status_food_fdpdtno(fdpdtno)
+                'ElseIf Status = "S" Then
+                '    'ไม่ต้องทำอะไร
+                '    ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT)
+                '    'update_status_food_fdpdtno(fdpdtno)
+                '    'BUILD_XML(Newcode_txt)
+                '    'update_status(Newcode_txt)
+                '    'ElseIf Status = "F" Then
+                '    '    BUILD_XML(Newcode_txt)
+                '    '    update_status_F(Newcode_txt)
+                'End If
+
+                ck = BUILD_XML_FOOD_FDPDTNO(fdpdtno, IDENTIFY_EDIT, Newcode)
             End If
             des = "START FC:XML_FOOD_FDPDTNO : create xml success"
             des_log(fdpdtno, IDENTIFY_EDIT, des, "สร้าง xml อาหาร")
         Catch ex As Exception
             Dim title As String
-        Dim Content As String
+            Dim Content As String
             title = "ERROR การสร้าง xml ยาที่ WS_INSERT_XML_CPN " & fdpdtno
             des_log(fdpdtno, IDENTIFY_EDIT, des, ex.Message)
             Content = fdpdtno & " : " & des
@@ -393,10 +395,10 @@ Public Class WS_INSERT_XML_FOOD
         dao_fda_cpn_keep.fields.fdpdtno = dao_fda_cpn.fields.fdpdtno
         dao_fda_cpn_keep.insert()
     End Sub
-    Private Function BUILD_XML_FOOD_FDPDTNO(ByVal fdpdtno As String, ByVal IDENTIFY_EDIT As String)
+    Private Function BUILD_XML_FOOD_FDPDTNO(ByVal fdpdtno As String, ByVal IDENTIFY_EDIT As String, ByVal Newcode As String)
         Dim dao_fda_food As New DAO_XML_FOOD.TB_XML_FOOD_PRODUCT
         dao_fda_food.GetDatabyfdpdtno(fdpdtno)
-        Dim NewCode As String = dao_fda_food.fields.NewCode
+
         Dim cut As String = NewCode.Substring(2, 2)
         Dim dao As New DAO_XML_CPN.TB_XML_CPN_KEEP_PATH
         'Dim dao_insert As New DAO_CONFIG.TB_XML_CONFIG
@@ -412,7 +414,7 @@ Public Class WS_INSERT_XML_FOOD
         Dim b As String = ""
         Dim Newcode_dt As String
         Dim groupname As String
-        Dim IDENTIFY As String
+        'Dim IDENTIFY As String
         Dim dt_detail As New DataTable
 
         'For Each fields As XML_CONFIG In Details
@@ -446,8 +448,8 @@ Public Class WS_INSERT_XML_FOOD
             'Dim dao As New DAO_DRUG.TB_XML_FRGN
 
             For Each dr As DataRow In dt.Rows
-                groupname = dr("groupname")
-                Newcode_dt = dr("Newcode")   'ใส้ใน  คือ detail
+                'groupname = dr("groupname")
+                'Newcode_dt = dr("Newcode")   'ใส้ใน  คือ detail
                 'IDENTIFY = dr("IDENTIFY")   'ใส้ใน  คือ detail
                 'If Newcode_dt = Newcode_txt Then
                 For Each dc As DataColumn In dt.Columns
@@ -477,31 +479,31 @@ Public Class WS_INSERT_XML_FOOD
 
 
 
-            If groupname = "FE" Or groupname = "FM" Then
+            If cut = "FE" Or cut = "FM" Then
 
                 Dim byterarrary As Byte() = Ms.ToArray()
                 Dim oFileStream As System.IO.FileStream
                 'oFileStream = New System.IO.FileStream("E:\xml\FDA_LICENSE\FOOD2\" & Newcode_txt & ".xml", System.IO.FileMode.Create)
                 'oFileStream = New System.IO.FileStream("C:\XML\LICENSE\FOOD2\" & Newcode_dt & ".xml", System.IO.FileMode.Create)
-                oFileStream = New System.IO.FileStream(Replace(dao.fields.XML_PATH, vbCrLf, "") & Newcode_dt & ".xml", System.IO.FileMode.Create)
+                oFileStream = New System.IO.FileStream(Replace(dao.fields.XML_PATH, vbCrLf, "") & Newcode & ".xml", System.IO.FileMode.Create)
                 oFileStream.Write(byterarrary, 0, byterarrary.Length)
                 oFileStream.Close()
                 Ms.Close()
 
-                ''----------------------BC--------------------------
-                'Dim pdfBytes As Byte() = clsds.UpLoadImageByte(dao.fields.XML_PATH & Newcode_dt & ".xml")
-                'Dim pdf_b64 As String = Convert.ToBase64String(pdfBytes)
-                'Dim ws_blockchain As New BLOCK_APP.WS_BLOCKCHAIN
-                'Dim ws_fields As New BLOCK_APP.XML_BLOCK
-                'ws_fields.TR_ID = Newcode_dt 'เลขTRANSATION
-                'ws_fields.IDENTIFY = IDENTIFY_EDIT 'เลขนิติบุคคล
-                'ws_fields.PROCESS_ID = "FOOD" 'เลขนิติบุคคล
-                'ws_fields.SEND_TIME = Date.Now 'วันเวลาที่ส่งเข้ามา
-                'ws_fields.SOP_STATUS = "8" 'สถานะคำขอนะ
-                'ws_fields.SYSTEM_ID = "FOOD" 'เลขสารระบบ
-                'ws_fields.SOP_REMARK = "" 'ความเห็น จนทที่พิมพ์มา
-                'ws_fields.XML_DATA = pdf_b64 'classxml ข้อมูล
-                'ws_blockchain.WS_BLOCK_CHAIN(ws_fields)
+                '----------------------BC--------------------------
+                Dim pdfBytes As Byte() = clsds.UpLoadImageByte(dao.fields.XML_PATH & Newcode & ".xml")
+                Dim pdf_b64 As String = Convert.ToBase64String(pdfBytes)
+                Dim ws_blockchain As New BLOCK_APP.WS_BLOCKCHAIN
+                Dim ws_fields As New BLOCK_APP.XML_BLOCK
+                ws_fields.TR_ID = Newcode 'เลขTRANSATION
+                ws_fields.IDENTIFY = IDENTIFY_EDIT 'เลขนิติบุคคล
+                ws_fields.PROCESS_ID = "FOOD" 'เลขนิติบุคคล
+                ws_fields.SEND_TIME = Date.Now 'วันเวลาที่ส่งเข้ามา
+                ws_fields.SOP_STATUS = "8" 'สถานะคำขอนะ
+                ws_fields.SYSTEM_ID = "FOOD" 'เลขสารระบบ
+                ws_fields.SOP_REMARK = "" 'ความเห็น จนทที่พิมพ์มา
+                ws_fields.XML_DATA = pdf_b64 'classxml ข้อมูล
+                ws_blockchain.WS_BLOCK_CHAIN(ws_fields)
 
                 update_status_food_fdpdtno(fdpdtno)
                 insert_Newcode_tb_temp_fdpdtno(fdpdtno)
@@ -512,17 +514,17 @@ Public Class WS_INSERT_XML_FOOD
                 Dim byterarrary As Byte() = Ms.ToArray()
                 Dim oFileStream As System.IO.FileStream
                 'oFileStream = New System.IO.FileStream("E:\xml\FDA_LICENSE\FOOD\" & Newcode_txt & ".xml", System.IO.FileMode.Create)
-                oFileStream = New System.IO.FileStream(dao.fields.XML_PATH & Newcode_dt & ".xml", System.IO.FileMode.Create)
+                oFileStream = New System.IO.FileStream(dao.fields.XML_PATH & Newcode & ".xml", System.IO.FileMode.Create)
                 oFileStream.Write(byterarrary, 0, byterarrary.Length)
                 oFileStream.Close()
                 Ms.Close()
 
                 '----------------------BC--------------------------
-                Dim pdfBytes As Byte() = clsds.UpLoadImageByte(dao.fields.XML_PATH & Newcode_dt & ".xml")
+                Dim pdfBytes As Byte() = clsds.UpLoadImageByte(dao.fields.XML_PATH & Newcode & ".xml")
                 Dim pdf_b64 As String = Convert.ToBase64String(pdfBytes)
                 Dim ws_blockchain As New BLOCK_APP.WS_BLOCKCHAIN
                 Dim ws_fields As New BLOCK_APP.XML_BLOCK
-                ws_fields.TR_ID = Newcode_dt 'เลขTRANSATION
+                ws_fields.TR_ID = Newcode 'เลขTRANSATION
                 ws_fields.IDENTIFY = IDENTIFY_EDIT 'เลขนิติบุคคล
                 ws_fields.PROCESS_ID = "FOOD" 'เลขนิติบุคคล
                 ws_fields.SEND_TIME = Date.Now 'วันเวลาที่ส่งเข้ามา
