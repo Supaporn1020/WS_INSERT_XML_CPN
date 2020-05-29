@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9D55AB86-6510-4993-BB86-7ACDBCA747CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WS_INSERT_XML_CPN</RootNamespace>
+    <AssemblyName>WS_INSERT_XML_CPN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WS_INSERT_XML_CPN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WS_INSERT_XML_CPN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINQ\LGT_XML_CMT.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_CMT.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_XML_FOOD.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_FOOD.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web References\BLOCK_APP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\BLOCK_APP\WS_BLOCKCHAIN.wsdl" />
+    <None Include="Web References\BLOCK_APP\WS_BLOCKCHAIN.disco" />
+    <Content Include="Web References\WS_BLOCKCHAIN\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\WS_BLOCKCHAIN\WS_BLOCKCHAIN.wsdl" />
+    <Content Include="Web References\WS_BLOCKCHAIN\XML_RETURN.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\WS_MAIL\FDA_MAIL.disco" />
+    <None Include="Web References\WS_BLOCKCHAIN\WS_BLOCKCHAIN.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_CMT.asmx" />
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_DRUG.asmx" />
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_FOOD.asmx" />
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_MDC.asmx" />
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_NCT.asmx" />
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_SIP.asmx" />
+    <Content Include="WS_INSERT_XML_CPN\WS_INSERT_XML_TXC.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASS\BAO\BAO_DRUG.vb" />
+    <Compile Include="CLASS\BAO\BAO_SIP.vb" />
+    <Compile Include="CLASS\ClassDataset.vb" />
+    <Compile Include="CLASS\CMT\XML_CMT_LICENSE_HISTORY.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL2.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL3.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL6.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL_PRODUCT.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL_PRODUCT_DETAIL2.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL_PRODUCT_DETAIL3.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL_PRODUCT_DETAIL4.vb" />
+    <Compile Include="CLASS\CMT_CMI\CMT_CHEMICAL_PRODUCT_DETAIL6.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT2.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT2_IOW_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT2_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT3.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT3_IOW_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT3_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT4.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT4_IOW_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT4_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT6.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT6_IOW_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT6_TO.vb" />
+    <Compile Include="CLASS\CMT_CMI\XML_CMT_TO.vb" />
+    <Compile Include="CLASS\DAO\DAO_CONFIG.vb" />
+    <Compile Include="CLASS\DAO\DAO_NCT.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_CMT.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_CPN.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_DRUG.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_DRUG_SEUB.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_FOOD.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_MDC.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_NCT.vb" />
+    <Compile Include="CLASS\DAO\DAO_XML_TXC.vb" />
+    <Compile Include="CLASS\DRUG\LGT_DRUG_DH15.vb" />
+    <Compile Include="CLASS\DRUG\LGT_SHOW_DATA_DRUG_DH15.vb" />
+    <Compile Include="CLASS\DRUG\LGT_XML_DRUG_LCN_CENTER.vb" />
+    <Compile Include="CLASS\DRUG\LGT_XML_DRUG_LCN_CENTER_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_ANIMAL_CONSUME_DRUGS_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_ANIMAL_DRUGS_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_IOW_E.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_IOW_EQ.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_IOW_EQ_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_RECIPE_GROUP_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_AGENT.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_CODE.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_COLOR.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_CONDITION_TABEAN.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_CONTAIN.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_CONTROL_ANALYZE.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_DOC_PDF.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_DOC_PI.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_DOC_PIL.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_EXPORT.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_SOURCE_OF_RM.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_SPC.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_DRUG_STORY_EDIT_HISTORY.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_FRGN_ALL_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\LGT_XML_STOWAGR_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\XML_DRUG_IOW_TO.vb" />
+    <Compile Include="CLASS\DRUG_ESUB\XML_DRUG_IOW_TYPE.vb" />
+    <Compile Include="CLASS\FOOD\XML_FOOD_LICENSE_HISTORY.vb" />
+    <Compile Include="CLASS\Gen_XML.vb" />
+    <Compile Include="CLASS\MDC\XML_MDC_LICENSE_HISTORY.vb" />
+    <Compile Include="CLASS\NCT\LGTNCT.vb" />
+    <Compile Include="CLASS\NCT\LGT_SEARCH_XML_NCT_LCN.vb" />
+    <Compile Include="CLASS\NCT\LGT_SEARCH_XML_NCT_LCN_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_AGENT.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_AGENT_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_COLOR_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_FRGN.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_FRGN_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_IOW.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_IOW_AORI_A.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_IOW_AORI_A_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_IOW_EQ.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_IOW_EQ_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_IOW_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_N.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_ALL.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_ALL_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_CANCELED_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_IOW.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_IOW_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_NQR_DETAIL_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_NQR_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_NR_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_N_MAI.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_N_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_N_TO_TEST.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_NCT_RECIPE_GROUP_TO.vb" />
+    <Compile Include="CLASS\NCT\LGT_XML_QUALITIES_COLOR_DRUG_TO.vb" />
+    <Compile Include="CLASS\TXC\LGT_TXC.vb" />
+    <Compile Include="CLASS\TXC\TXC.vb" />
+    <Compile Include="LINQ\LGT_FDA_XML_MDC.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_FDA_XML_MDC.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_NCT.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_NCT.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_CMT.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_CMT.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_CONFIG.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_CONFIG.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_CPN.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_CPN.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_DRUG.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_DRUG.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_DRUG.vb">
+      <DependentUpon>LGT_XML_DRUG.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_DRUG_ESUB.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_DRUG_ESUB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_FOOD.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_FOOD.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_NCT.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_NCT.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_SIP.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_SIP.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ\LGT_XML_TXC.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGT_XML_TXC.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Web References\BLOCK_APP\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_BLOCKCHAIN\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MAIL\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_CMT.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_CMT.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_DRUG.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_DRUG.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_FOOD.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_FOOD.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_MDC.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_MDC.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_NCT.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_NCT.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_SIP.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_SIP.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WS_INSERT_XML_CPN\WS_INSERT_XML_TXC.asmx.vb">
+      <DependentUpon>WS_INSERT_XML_TXC.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINQ\LGT_XML_CONFIG.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_CONFIG.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_XML.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_FDA_XML_MDC.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_FDA_XML_MDC.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_NCT.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_NCT.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="LINQ\LGT_XML_CPN.dbml.layout">
+      <DependentUpon>LGT_XML_CPN.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_DRUG.dbml.layout">
+      <DependentUpon>LGT_XML_DRUG.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_CONFIG.dbml.layout">
+      <DependentUpon>LGT_XML_CONFIG.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML.dbml.layout">
+      <DependentUpon>LGT_XML.dbml</DependentUpon>
+    </None>
+    <Content Include="LINQ\LGT_XML_NCT.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_NCT.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_XML_SIP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_SIP.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_XML_DRUG_ESUB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_DRUG_ESUB.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="LINQ\LGT_XML_TXC.dbml.layout">
+      <DependentUpon>LGT_XML_TXC.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_NCT.dbml.layout">
+      <DependentUpon>LGT_XML_NCT.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_SIP.dbml.layout">
+      <DependentUpon>LGT_XML_SIP.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_FDA_XML_MDC.dbml.layout">
+      <DependentUpon>LGT_FDA_XML_MDC.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_NCT.dbml.layout">
+      <DependentUpon>LGT_NCT.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_DRUG_ESUB.dbml.layout">
+      <DependentUpon>LGT_XML_DRUG_ESUB.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_CMT.dbml.layout">
+      <DependentUpon>LGT_XML_CMT.dbml</DependentUpon>
+    </None>
+    <None Include="LINQ\LGT_XML_FOOD.dbml.layout">
+      <DependentUpon>LGT_XML_FOOD.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINQ\LGT_XML_CPN.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_CPN.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_XML_DRUG.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_DRUG.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LINQ\LGT_XML_TXC.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LGT_XML_TXC.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web References\WS_MAIL\FDA_MAIL.wsdl" />
+    <Content Include="Web References\WS_MAIL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.111.28.107/BLOCK_APP/">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BLOCK_APP\</RelPath>
+      <UpdateFromURL>http://10.111.28.107/BLOCK_APP/</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WS_INSERT_XML_CPN_BLOCK_APP_WS_BLOCKCHAIN</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.111.28.66/FDA_BLOCKV2/">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_BLOCKCHAIN\</RelPath>
+      <UpdateFromURL>http://10.111.28.66/FDA_BLOCKV2/</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WS_INSERT_XML_CPN_WS_BLOCKCHAIN_WS_BLOCKCHAIN</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.108/Mail/FDA_MAIL.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MAIL\</RelPath>
+      <UpdateFromURL>http://164.115.28.108/Mail/FDA_MAIL.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WS_INSERT_XML_CPN_WS_MAIL_FDA_MAIL</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57071</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57090/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

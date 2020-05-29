@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_XML_CMT" Class="LGT_XML_CMTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.111.28.124;Initial Catalog=FDA_XML_CMT;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_XML_CMTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LICENSE_HISTORY" Member="LICENSE_HISTORY_CMTs">
+    <Type Name="LICENSE_HISTORY_CMT">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="APPVDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LCTNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LCNNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TOPIC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TEXT_OLD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TEXT_NEW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RCVNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RCVDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="REF_NO" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

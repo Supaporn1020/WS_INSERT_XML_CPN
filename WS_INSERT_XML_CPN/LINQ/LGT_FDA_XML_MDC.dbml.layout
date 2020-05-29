@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LGT_FDA_XML_MDC">
+  <DataContextMoniker Name="/LGT_FDA_XML_MDCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4500215a-aeb4-4557-a476-74b19e50eef9" isExpanded="false" absoluteBounds="0.875, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_FDA_XML_MDCDataContext/XML_MDC2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55a055ca-b6b7-4a00-aa6b-1df0cb861b32" absoluteBounds="0.89, 1.71, 1.9700000000000002, 7.1722412109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9acf4d0-9f77-4c5e-b67a-f6458e79b13b" isExpanded="false" absoluteBounds="0.875, 2, 2, 0.45">
+      <DataClassMoniker Name="/LGT_FDA_XML_MDCDataContext/LICENSE_HISTORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66f401ef-ea52-44ae-b254-5c5ae1c7f9d1" absoluteBounds="0.89, 2.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_XML_TXC" Class="LGT_XML_TXCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=164.115.28.124;Initial Catalog=FDA_XML_TXC;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_XML_TXCConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.XML_TXC" Member="XML_TXC1s">
+    <Type Name="XML_TXC1">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pvncd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="infno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rgno" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lcnsid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lcntpcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rcvdate" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="expdate" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ttrdnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="etrdnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fpdnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="cntcd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rid" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="GrouNAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Newcode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ranking" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="lctcd" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="lctnmcd" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CITIZEN_ID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="FULL_ADDR" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lct_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="owner_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LCN_DISPLAY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LCN_SEARCH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDENTIFY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LCN_SEARCH2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STATUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STATUS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LICENSE_TYPE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LCNTPCD_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rcvno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="abbreviation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="register_abbreviation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="register" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="register_cwabbr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rgtpnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rstnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rstcd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="psntp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="cnclnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="usedcd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="frmtcd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="usednm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="frmtnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="chngwtcd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thachngwtnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rcvdate_TH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rgdate" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rgdate_TH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="expdate_TH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="isocode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="engcntnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thacntnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Newcode_R" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lmdfdate" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="qty" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="unitnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lctnm_keep" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="address_keep" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="chngwtcd_ask_where" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ask_where" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="register_lcnno" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="cnsdcd" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lcntpnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thanm_manufacture" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thanm_addr_manufacture" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="action_notice" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="stunit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Newcode_contro" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="rcvdate_EN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="export_nm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="WS_INSERT_XML_CPN_BLOCK_APP_WS_BLOCKCHAIN" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.107/BLOCK_APP/WS_BLOCKCHAIN.asmx</Value>
+    </Setting>
+    <Setting Name="WS_INSERT_XML_CPN_WS_MAIL_FDA_MAIL" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://164.115.28.108/Mail/FDA_MAIL.asmx</Value>
+    </Setting>
+    <Setting Name="WS_INSERT_XML_CPN_WS_BLOCKCHAIN_WS_BLOCKCHAIN" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.111.28.66/FDA_BLOCKV2/WS_BLOCKCHAIN.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

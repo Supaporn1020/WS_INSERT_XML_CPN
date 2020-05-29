@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LGT_XML_DRUG">
+  <DataContextMoniker Name="/LGT_XML_DRUGDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a13e331-ef6d-47de-b7e2-31131e7a423a" isExpanded="false" absoluteBounds="1.5, 1.375, 2.375, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUGDataContext/XML_SEARCH_PRODUCT_GROUP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b2ed4a5-c72d-4d87-9982-500f36d40fb6" absoluteBounds="1.5150000000000001, 1.835, 1.9700000000000002, 15.441202799479166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b926fa8c-9e0d-47b7-bf2a-5ba5bc16176b" isExpanded="false" absoluteBounds="1.5, 1.875, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUGDataContext/XML_SEARCH_DRUG_LCN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d4b0072-1c77-4bb2-9bf3-b1cba7a35c6b" absoluteBounds="1.5150000000000001, 2.335, 1.9700000000000002, 10.0567626953125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c458bea2-1263-4582-8f5a-67a65adfcf3c" isExpanded="false" absoluteBounds="1.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUGDataContext/XML_DRUG_PHARMACY_TO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c236cf7e-18ed-40e9-af7f-66e4a7ed98d5" absoluteBounds="1.5150000000000001, 2.835, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10985c89-b0b4-49f4-bb11-61778c377d7a" isExpanded="false" absoluteBounds="1.5, 2.875, 2.25, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUGDataContext/XML_SEARCH_DRUG_LCN_LICEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bf2504d-0bd1-471c-9d6e-188a2ad310ae" absoluteBounds="1.5150000000000001, 3.335, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

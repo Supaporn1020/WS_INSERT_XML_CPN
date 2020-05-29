@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_XML" Class="LGT_NCTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=164.115.28.124;Initial Catalog=FDA_XML;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_XMLConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.XML_NCT" Member="XML_NCTs">
+    <Type Name="XML_NCT">
+      <Column Name="pvncd" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="lcnno" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="lcnsid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rcvno" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="conventpcd2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="rgttpcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lcntypecd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trdnm" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="gennm" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="itemtype" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="rcvdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="expdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NEWCODE" Type="System.String" DbType="NVarChar(307)" CanBeNull="true" />
+      <Column Name="Producer_Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Cntcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ranking" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="convenst" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDENTIFY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="frgn_Addr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="totalqty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="totaluntcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

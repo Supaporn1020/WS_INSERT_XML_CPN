@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_XML_MDC" Class="LGT_FDA_XML_MDCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=164.115.28.124;Initial Catalog=FDA_XML_MDC;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_XML_MDCConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.XML_MDC2" Member="XML_MDC2s">
+    <Type Name="XML_MDC2">
+      <Column Name="pvncd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lcnno" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Doc_no" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lcnsid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="lcntypecd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="thamdnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="engmdnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="productnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="engfrgnnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="cntcd" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="itemno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="appvdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="expdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="appno" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Ranking" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Newcode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAT_NO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="des" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="own_cntcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="lctcd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lctnmcd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lct_name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ownername" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Full_Addr" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CITIZEN_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LCN_DISPLAY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LCN_SEARCH" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="frgn_addr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP_DATE_TEMP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STATUS_ID" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ABBR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PAY_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="engcntnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LICENSE_HISTORY" Member="LICENSE_HISTORies">
+    <Type Name="LICENSE_HISTORY">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="APPVDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LCTNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LCNNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TOPIC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TEXT_OLD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TEXT_NEW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RCVNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RCVDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="REF_NO" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

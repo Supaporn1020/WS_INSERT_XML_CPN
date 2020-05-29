@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_XML_FOOD" Class="LGT_XML_FOODDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.111.28.124;Initial Catalog=FDA_XML_FOOD;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_XML_FOODConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.XML_FOOD_EDIT_HISTORY" Member="XML_FOOD_EDIT_HISTORies">
+    <Type Name="XML_FOOD_EDIT_HISTORY">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FDPDTNO" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
+      <Column Name="LCTLCNNO" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="OBJ_CD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DES_OLD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DES_NEW" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDIT_DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDIT_REMARK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDIT_REMARK_STAFF" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SUB_OBJ_CD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CER_NUMBER" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="RCVNO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SYSTEM" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EDIT_SPECIAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.XML_FOOD_PRODUCT" Member="XML_FOOD_PRODUCTs">
+    <Type Name="XML_FOOD_PRODUCT">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pvncd" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="lcnno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lcnsid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fdpdtno" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="lcntypecd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prdnmt" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="prdnme" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Producer_Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="groupname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NewCode" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Ranking" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cntcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="appdate" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="expdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cer_expdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thanm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Addr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fdtypecd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fdtypenm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thanmowner" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lctlcnno" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CITIZEN_AUTHORIZE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SUBPDT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MTHCD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="frgn_addr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LCN_STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LCN_STATUS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FACTORY_TYPE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APPLICTION_TYPE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TAXNO" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOSAGE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EXPDAY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUBPDT_NM" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MTHCD_NM" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FML" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status_name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="remark_product" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="remark_location" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CANCEL_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVE_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_log_temp_food" Member="tb_log_temp_foods">
+    <Type Name="tb_log_temp_food">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDENTIFY_EDIT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="system" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fdpdtno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="log_des" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="log_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

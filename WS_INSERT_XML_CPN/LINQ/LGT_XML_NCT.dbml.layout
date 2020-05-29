@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LGT_XML_NCT">
+  <DataContextMoniker Name="/LGT_XML_NCTDataContext" />
+  <nestedChildShapes>
+    <classShape Id="89634382-301d-4381-b0d0-0fa77c376cb4" isExpanded="false" absoluteBounds="0.875, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_N" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b3172f6-100e-418e-9c43-aee9208a0556" absoluteBounds="0.89000000000000012, 2.21, 1.9700000000000002, 11.595174153645832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8897e818-5153-45ea-977c-9035d90ba1e1" isExpanded="false" absoluteBounds="0.875, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_NR_NQR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf0df4cf-d9c9-416a-95b4-2e5e98775dcc" absoluteBounds="0.89, 2.71, 1.9700000000000002, 9.2875569661458321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4228054-3d72-4215-a716-94fa56aab0b1" isExpanded="false" absoluteBounds="3, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_NR_NQR_DETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c605bfd0-3589-41ba-a995-e6c376e10b55" absoluteBounds="3.015, 2.21, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62735909-3907-423f-a0f8-15560775973d" isExpanded="false" absoluteBounds="3, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_FRGN_TO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b75ec73e-77e0-4dde-add6-9497a1670e78" absoluteBounds="3.015, 1.71, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ea1a3f7-8ccf-4393-aac5-d5120127bec0" isExpanded="false" absoluteBounds="3, 3.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_RECIPE_GROUP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90173bfb-8f7e-4a8f-a793-0f517ea867f0" absoluteBounds="3.0149999999999997, 3.71, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ccdca844-3f48-4e8b-a00b-4b8af04f63c4" isExpanded="false" absoluteBounds="0.875, 3.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_AGENT_TO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d9e45b6-3bb3-43a5-97b8-bda692dc0b64" absoluteBounds="0.88999999999999968, 3.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d59bdc4d-1bf1-4cb5-9f19-efc77b07d650" isExpanded="false" absoluteBounds="5, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_IOW_TO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b816eb7-f544-4260-9df9-ff34b68a6388" absoluteBounds="5.015, 3.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcef81d7-fb13-463e-bc47-991d6fe649a2" isExpanded="false" absoluteBounds="3, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_IOW_AORI_A" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1bb2e9f-1ad2-4a5d-968b-fbb78126d03c" absoluteBounds="3.0149999999999997, 3.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="705fce2f-43cf-4357-a176-95963480a201" isExpanded="false" absoluteBounds="0.875, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_COLOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8514d62f-8961-46d8-a15e-acbf0dba10a1" absoluteBounds="0.88999999999999968, 3.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d87dd403-0c60-417e-8502-32d8d89a7e8d" isExpanded="false" absoluteBounds="5, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_QUALITIES_COLOR_DRUG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26e0e0ea-d578-4529-937d-e95a8b19945a" absoluteBounds="5.015, 2.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7bc99504-33ee-4b16-accd-dc6d8736efc0" isExpanded="false" absoluteBounds="5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_IOW_EQ_TO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b0c23b9-f22b-4c5b-871f-9c6b3a7ef57d" absoluteBounds="5.015, 2.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0409ac2d-3dd0-46b5-95ca-a86c4535b997" isExpanded="false" absoluteBounds="5, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_NR_CANCELED" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6198b9c4-5d6d-4e33-88e5-a3a4e0061dab" absoluteBounds="5.015, 1.71, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e1f0061-d114-4d55-85a2-76c52b8c01ad" isExpanded="false" absoluteBounds="3, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_NCTDataContext/XML_NCT_NR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d12e12e3-1303-49aa-8a76-4e8b32e4ed8a" absoluteBounds="3.0149999999999997, 2.71, 1.9700000000000002, 11.018269856770832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

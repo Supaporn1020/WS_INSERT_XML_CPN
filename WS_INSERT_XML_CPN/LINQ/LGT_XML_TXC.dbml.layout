@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LGT_XML_TXC">
+  <DataContextMoniker Name="/LGT_XML_TXCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6433e150-924d-4b67-b32b-3822c2a6ad9d" isExpanded="false" absoluteBounds="0.875, 1, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_TXCDataContext/XML_TXC1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8fe0eaa-c0e0-47e1-99e7-611a8ec43933" absoluteBounds="0.89, 1.46, 1.9700000000000002, 13.902791341145832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16, 15.5" name="LGT_XML_DRUG_ESUB">
+  <DataContextMoniker Name="/LGT_XML_DRUG_ESUBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="22ae1994-e5dc-49ed-b29d-38dc7b0dcb9f" isExpanded="false" absoluteBounds="0.75, 0.75, 3.25, 0.44999999999999996">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_SEARCH_PRODUCT_GROUP_ESUB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e244d6b3-e81b-416e-b763-54ccc362757f" absoluteBounds="0.76500000000000012, 1.21, 1.9700000000000002, 17.941121419270832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e40cd9b7-a0b8-4feb-93db-8878aab1d1e6" isExpanded="false" absoluteBounds="0.75, 2.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_AGENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f3a8e19-cd67-4268-95a2-32839a4a11e1" absoluteBounds="0.765, 3.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="390d8afd-e3e2-472f-851f-91952eaeb97b" isExpanded="false" absoluteBounds="3.75, 2.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_STOWAGR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca5460ab-c5b6-49f5-947a-0cf00f15088a" absoluteBounds="3.765, 3.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7fc6473e-4224-4a68-ae5e-741eb21ee037" isExpanded="false" absoluteBounds="4.75, 0.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_ANIMAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75df0802-0129-462b-8ba5-cadfdb2a1553" absoluteBounds="4.765, 1.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a34cb0e-1831-49a4-b20f-7b74348a54a3" isExpanded="false" absoluteBounds="0.75, 4.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_ANIMAL_CONSUME" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b40214e-02b4-4809-8fb2-d3643252322b" absoluteBounds="0.76499999999999968, 5.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a7efb82-a842-40a4-a95d-5fdab7866ea2" isExpanded="false" absoluteBounds="3.75, 4.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_CODE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c87c5b14-d19d-495a-9840-6d2118af9a1f" absoluteBounds="3.765, 5.2100000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5814dd15-a8aa-4c21-a3fb-f4609761decf" isExpanded="false" absoluteBounds="0.75, 6.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_CONDITION_TABEAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a3e0b57-4d85-47f3-9bc0-bb2305f6f0e8" absoluteBounds="0.76500000000000057, 7.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9490167-f9ce-4010-b660-2edca80cded7" isExpanded="false" absoluteBounds="6.75, 2.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_DOC_PDF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47d91eb4-54b9-4c05-a080-92c6db591303" absoluteBounds="6.7650000000000006, 3.2100000000000009, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2a3f75e-3c9e-415e-be58-4508ded3cc56" isExpanded="false" absoluteBounds="3.75, 6.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_FRGN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e03714af-a3de-4e7c-b943-8fd0af139a6f" absoluteBounds="3.7650000000000006, 7.2100000000000009, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09d54876-5f4b-427e-919f-7d558312e85e" isExpanded="false" absoluteBounds="6.75, 4.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_PHARMACY_ESUB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e116de72-6d4f-4fd9-9a37-06e8ab02bcbe" absoluteBounds="6.7650000000000006, 5.2100000000000009, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a67c08e-91a2-42d8-9d4d-322ee82fe05e" isExpanded="false" absoluteBounds="6.75, 6.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_PI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e9b13e8-dbc4-4fc6-b276-eabed9ce9cfd" absoluteBounds="6.7650000000000006, 7.2100000000000009, 1.9700000000000002, 9.6721598307291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a9c3195-ed13-43b1-b95a-7db394dc824f" isExpanded="false" absoluteBounds="7.75, 0.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_PIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="867fb49e-a01c-41a8-9b79-d4de4afce60e" absoluteBounds="7.7650000000000006, 1.2100000000000009, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcb863e7-696f-48fb-82ed-96fcec7146bb" isExpanded="false" absoluteBounds="9.75, 2.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_SOURCE_OF_RM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bafa35c5-52ab-4447-97e2-1708d47b5080" absoluteBounds="9.765, 3.2100000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="019db12d-9284-499e-a09e-ee4116a6d0d4" isExpanded="false" absoluteBounds="9.75, 4.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_SPC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dad16ab8-17e9-492e-87bb-c0495311e2de" absoluteBounds="9.765, 5.2100000000000009, 1.9700000000000002, 11.979777018229166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8b97f16-9a62-4c21-acd3-818820b378d7" isExpanded="false" absoluteBounds="9.75, 8.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_RECIPE_GROUP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01a9bb77-29d9-4c3c-8083-6fb633bcddd6" absoluteBounds="9.765, 9.21, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1172f9b-5c79-4a9b-9d11-9c2d3e7aea7d" isExpanded="false" absoluteBounds="10.75, 0.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_COLOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b34f353-8ee7-4db6-9a61-ce56dedb84f3" absoluteBounds="10.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cecfd53-8f67-4d62-90c8-542675831a76" isExpanded="false" absoluteBounds="9.75, 10.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_CONTAIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94465f15-4dae-413b-b9d0-2a7a83304deb" absoluteBounds="9.765, 11.21, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80182ebb-818d-4e3a-9dfd-de5f6790e704" isExpanded="false" absoluteBounds="12.75, 2.75, 2, 0.45000000000000018">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_CONTROL_ANALYZE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65a4648b-ce56-4e1d-9f7c-f32ebb9c1658" absoluteBounds="12.765, 3.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1167f40-472c-48b9-9b75-c11275bb72d4" isExpanded="false" absoluteBounds="12.75, 4.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_EXPORT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="229bb163-c604-4aec-9c85-a75676adc8d1" absoluteBounds="12.765, 5.2100000000000009, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1601feb2-1588-4c2f-bc55-86170147beb8" isExpanded="false" absoluteBounds="12.75, 6.75, 2.25, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_STORY_EDIT_HISTORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0606321-34c2-400d-b41d-12d0bc7adff2" absoluteBounds="12.765, 7.2100000000000009, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1afa811-415b-4878-b0f3-a9bbec71241e" isExpanded="false" absoluteBounds="12.75, 8.75, 2, 0.44999999999999929">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_IOW" />
+      <nestedChildShapes>
+        <elementListCompartment Id="741b59d0-529e-45fa-9c0d-8838ee4e0a56" absoluteBounds="12.765, 9.21, 1.9700000000000002, 8.7106526692708321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7926876c-1c91-4569-9874-3f71b660f95e" isExpanded="false" absoluteBounds="12.75, 12.75, 2.5, 0.45000000000000284">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_SEARCH_DRUG_LCN_ESUB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47bfd358-69b0-45a5-9325-96d7a4b452c9" absoluteBounds="12.765, 13.21, 2.4699999999999998, 10.0567626953125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0670948-9684-4fb7-9a4e-84ede426a724" isExpanded="false" absoluteBounds="13.75, 0.75, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_PHARMACY_ESUB1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebe45733-db6f-42f3-a7ee-09e1b867a760" absoluteBounds="13.765, 1.2100000000000009, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a69dc9df-cc5d-4b47-b08b-206d3eb61a79" isExpanded="false" absoluteBounds="12.75, 14.75, 2, 0.45000000000000284">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/TEST_NEWCODE_U" />
+      <nestedChildShapes>
+        <elementListCompartment Id="601bd8a7-5e96-4fb5-90a9-4ab112890d06" absoluteBounds="12.765, 15.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a41d2b90-f31f-49e9-afa4-b716ea6e5b90" isExpanded="false" absoluteBounds="9.75, 6.75, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/tb_log_temp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="44f4acd1-3609-4cd9-99cb-6c05e6bd7890" absoluteBounds="9.765, 7.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c2702a4-4eb6-4fca-90df-1cde62150c30" isExpanded="false" absoluteBounds="12.75, 10.625, 2, 0.45">
+      <DataClassMoniker Name="/LGT_XML_DRUG_ESUBDataContext/XML_DRUG_IOW_EQ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83ae1b8b-8a55-43a3-9426-6b5d8df0fed6" absoluteBounds="12.765, 11.085, 1.9700000000000002, 7.7491455078125009" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
